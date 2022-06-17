@@ -15,8 +15,9 @@ class Server{
 
     middelwares(){
          //COORS
-         this.app.use(cors());
-
+         this.app.use(cors());        
+        //Body Parser
+        this.app.use(express.json());                 
          //directorio publico
          this.app.use(express.static('public'));
     }
